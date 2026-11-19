@@ -50,3 +50,14 @@ tr, th{
   text-decoration: none;
   background-color: #222;
 }
+
+.project-grid{
+  display: grid;
+  place-self: center;
+  place-content: center;
+  grid-template-columns: auto auto;
+}
+
+.grid-item{
+  
+}
