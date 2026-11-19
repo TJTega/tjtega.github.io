@@ -2,7 +2,7 @@
 '
 <div class="navbar">
   <div class="navitem">
-    <a href="index.html"><h1 style="color: green; margin: auto;">Tega Amrore: Portfolio (WIP)</h1></a>
+    <a href="index.html"><h1 style="color: green; margin: auto; border: none;">Tega Amrore: Portfolio (WIP)</h1></a>
   </div>
   <div class="navitem">
     <a href="index.html"><div>HOME</div></a>
