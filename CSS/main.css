@@ -46,6 +46,7 @@ tr, th{
   margin: auto;
   text-align: center;
   justify-content: center;
+  z-index: 1;
 }
 
 .navbar a:hover{
@@ -66,4 +67,36 @@ tr, th{
   padding: 10px;
   border: 1px solid black;
   border-radius: 25px;
+}
+
+.welcome-banner{
+  display: flex;
+  width: 100%;
+  /*background-color: red;*/
+  border-bottom: 1px solid black;
+  height: 30vh;
+  font-size: 75pt;
+  align-items: center;
+  justify-content: center;
+  color: #7795;
+  flex-flow: row;
+}
+
+.intro-text{
+  width: 75%;
+  /*background-color: teal;*/
+  min-height: 250px;
+  padding: 10px;
+}
+
+@media(max-width:1580px){
+  .welcome-banner{
+    flex-flow: column;
+    height: 32vh;
+  }
+}
+@media(max-width:800px){
+  .intro-text{
+    width: 100%;
+  }
 }
