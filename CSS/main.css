@@ -12,7 +12,7 @@ body{
 .navbar{
   padding: 0;
   margin: 0;
-  height: 10vh;
+  min-height: 10vh;
   width: 100%;
   background-color: white;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -39,7 +39,6 @@ tr, th{
   display: flex;
   color: #222;
   text-decoration: none;
-  top: 0; bottom: 0;
   padding: 8px;
   border-left: 1px solid black;
   width: auto;
@@ -74,7 +73,7 @@ tr, th{
   width: 100%;
   /*background-color: red;*/
   border-bottom: 1px solid black;
-  height: 30vh;
+  min-height: 30vh;
   font-size: 75pt;
   align-items: center;
   justify-content: center;
@@ -92,7 +91,20 @@ tr, th{
 @media(max-width:1450px){
   .welcome-banner{
     flex-flow: column;
-    height: 40vh;
+  }
+}
+@media(max-width:910px){
+  .navbar{
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 15vh;
+  }
+  .navitem a:first-child{
+    border:none;
+  }
+  .navitem a{
+    margin: 0;
   }
 }
 @media(max-width:800px){
@@ -103,6 +115,13 @@ tr, th{
 @media(max-width:525px){
   .welcome-banner{
     font-size: 55pt;
+  }
+  .navitem{
+    flex-flow: column;
+  }
+  .navitem a{
+    border: none;
+    padding: 10px;
   }
 }
 @media(max-width:400px){
