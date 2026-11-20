@@ -89,14 +89,24 @@ tr, th{
   padding: 10px;
 }
 
-@media(max-width:1580px){
+@media(max-width:1450px){
   .welcome-banner{
     flex-flow: column;
-    height: 32vh;
+    height: 40vh;
   }
 }
 @media(max-width:800px){
   .intro-text{
     width: 100%;
+  }
+}
+@media(max-width:525px){
+  .welcome-banner{
+    font-size: 55pt;
+  }
+}
+@media(max-width:400px){
+  .welcome-banner{
+    font-size: 34pt;
   }
 }
